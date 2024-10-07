@@ -1,0 +1,99 @@
+/* Set global variables */
+:root {
+    --primary-background-color: #828080;
+    --secondary-background-color: #3f3f3f;
+    --primary-text-color: #000;
+    --secondary-text-color: #fff;
+    --screen-background-color: #bcbcbc;
+    --primary-button-color: #000;
+    --secondary-button-color: #898989;
+    --primary-font-family: 'Roboto', sans-serif;
+    --primary-font-size: 24px;
+    --calculator-radius: 10px;
+    --button-radius: 10px;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body styles */
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
+}
+
+/* Set header styles */
+header{
+    font-size: 25px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* Set main styles */
+main {
+    min-width: 500px;
+}
+.calculator {
+    background-color: var(--secondary-background-color);
+    border-radius: var(--calculator-radius);
+    margin: 15px auto;
+    width: 400px;
+    min-height: 500px;
+    padding: 20px;
+}
+
+.calculator-screen {
+    background-color: var(--screen-background-color);
+    border-radius: var(--button-radius);
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.operation-line {
+    font-size: 25px;
+    height: 30px;
+}
+
+.display-line {
+    font-size: 30px;
+    height: 35px;
+}
+
+.special-buttons, .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 12px;
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    gap: 12px;
+}
+button {
+    border-radius: var(--button-radius);
+    font-size: x-large;
+    height: 60px;
+    flex: 1;
+}
+
+button:hover {
+    background-color: var(--secondary-button-color);
+    color: var(--secondary-text-color);
+}
+
+/* Set footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+}
